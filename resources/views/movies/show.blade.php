@@ -7,6 +7,7 @@
     <h2>{{ $movie->Title }}</h2>
     <h1> Genre:</h1> 
     <h2>{{ $movie->Genre }}</h2> 
+    <h1> Director:</h1> 
     <h2>{{ $movie->Director }} 
     <h1>Year:</h1> 
     <h2>{{ $movie->Year }}</h2> 

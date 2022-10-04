@@ -25,7 +25,7 @@
     <div class="container">
         <nav class="nav">
           <a class="nav-link" href="/movies">Movies</a>
-          <a class="nav-link" href="/add">Add Movie</a>
+          <a class="nav-link" href="/create">Create Movie</a>
         </nav>
       </div>
       @yield('content')
