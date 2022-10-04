@@ -8,7 +8,7 @@
 @foreach($movies as $movie)
 
 <h1> 
-    <a href="/singlemovie">{{ $movie->Title}}</a>
+    <a href="/movies/{{ $movie->id }}">{{ $movie->Title}}</a>
 </h1>   
 
     <h2> 
