@@ -32,7 +32,7 @@ class MoviesController extends Controller
 
     public function store(CreateMovieRequest $request)
     {
-        $movie = new Movies();
+        // $movie = new Movies();
 
         $validated = $request->validated();
 
@@ -44,7 +44,7 @@ class MoviesController extends Controller
             'Storyline' => $validated['Storyline']
         ]);
 
-        $movie->save();
+        // $movie->save();
         return redirect('/movies');
     }
 }

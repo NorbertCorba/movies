@@ -25,8 +25,8 @@ class CreateMovieRequest extends FormRequest
     {
         return [
             'Title' => 'required',
-            'Genre' => 'required|min:2',
-            'Director' => 'required|min:5',
+            'Genre' => 'required',
+            'Director' => 'required',
             'Year' => 'required|max:4',
             'Storyline' => 'required|max:1000'
         ];

@@ -9,6 +9,7 @@
 
 <h1> 
     <a href="/movies/{{ $movie->id }}">{{ $movie->Title}}</a>
+
 </h1>   
 
     <h2> 
