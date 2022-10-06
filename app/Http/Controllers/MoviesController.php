@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Movies;
+use App\Models\Movie;
 use App\Http\Requests\CreateMovieRequest;
 use App\Http\Models\Comment;
 
@@ -13,14 +13,14 @@ class MoviesController extends Controller
 {
     public function index() {
 
-        $movies = Movies::all();
+        $movies = Movie::all();
 
         return view('movies.index', compact('movies'));
     }
 
         public function show($id) {
 
-        $movie = Movies::with('comments')->find($id);
+        $movie = Movie::with('comments')->find($id);
 
         return view('movies.show', compact('movie'));
 
@@ -37,7 +37,7 @@ class MoviesController extends Controller
 
         $validated = $request->validated();
 
-        Movies::create([
+        Movie::create([
             'Title' => $validated['Title'],
             'Genre' => $validated['Genre'],
             'Director' => $validated['Director'],

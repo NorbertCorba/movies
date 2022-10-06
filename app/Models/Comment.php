@@ -14,7 +14,7 @@ class Comment extends Model
 
     public function movie()
     {
-        return $this->belongsTo(Movies::class);
+        return $this->belongsTo(Movie::class);
     }
 
 }

@@ -16,14 +16,14 @@
 </div>
 
 <div>
-    <h4>Comments:</h4>
+    <h1>Comments:</h1>
 
 <ul>
         @foreach($movie->comments as $comment)
-            <li>
-                {{ $comment->content }}
-                Created at: {{ $comment->created_at }}
-            </li>
+            
+            <h3>{{ $comment->content }}</h3>
+            <h3>Created at: {{ $comment->created_at }}</h3>
+            
         @endforeach
     </ul>        
 </div>

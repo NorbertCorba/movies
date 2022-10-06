@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Movies;
+use App\Models\Movie;
 use App\Http\Controllers\MoviesController;
+use App\Models\Comment;
+
 
 /*
 |--------------------------------------------------------------------------
